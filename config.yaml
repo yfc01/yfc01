@@ -29,31 +29,31 @@ permalinks:
 
 # 语言设置
 defaultContentLanguage: zh          # 默认内容语言为中文
-defaultContentLanguageInSubdir: false   # 默认语言内容在子目录中
+defaultContentLanguageInSubdir: false   # 默认语言内容不在子目录中
 
 # 语言配置
 languages:
   zh:
     languageName: "中文"          # 语言名称
-    weight: 1                         # 语言权重
-    taxonomies:                       # 分类系统
+    weight: 1                      # 语言权重
+    taxonomies:                    # 分类系统
       category: categories
       tag: tags
-    params:                           # 自定义参数
+    params:                        # 自定义参数
       profileMode:
-        enabled: true                 # 启用个人资料模式
-        title:  :-)                   # 个人资料标题
-        subtitle: ""                  # 个人资料副标题
-        imageUrl: "img/active.jpg"   # 个人资料图像 URL
-        imageWidth: 150                # 图像宽度
-        imageHeight: 150               # 图像高度
+        enabled: true              # 启用个人资料模式
+        title:  ":-)"              # 个人资料标题
+        subtitle: ""               # 个人资料副标题
+        imageUrl: "img/active.jpg" # 个人资料图像 URL
+        imageWidth: 150            # 图像宽度
+        imageHeight: 150           # 图像高度
 
     # 菜单配置
     menu:
       main:
         - name: 首页
           pageRef: /
-          weight: 1                    # 控制在页面上展示的前后顺序
+          weight: 1                # 控制在页面上展示的前后顺序
         - name: 文章
           pageRef: posts
           weight: 2
@@ -82,92 +82,96 @@ outputs:
 
 # 自定义参数设置
 params:
-  env: production                    # 环境设置为生产环境
-  author: yfc01                       # 博主姓名
-  defaultTheme: auto                 # 默认主题设置为自动
-  disableThemeToggle: false          # 启用主题切换
-  DateFormat: "2006-01-02"          # 日期格式
-  ShowShareButtons: true             # 是否显示分享按钮
-  ShowReadingTime: true              # 是否显示阅读时间
-  displayFullLangName: true          # 是否显示完整语言名称
-  ShowPostNavLinks: true             # 是否显示文章导航链接
-  ShowBreadCrumbs: false             # 是否显示面包屑导航
-  ShowCodeCopyButtons: true          # 是否显示代码复制按钮
-  hideFooter: false                  # 不隐藏页脚
-  ShowWordCounts: true               # 是否显示字数
-  VisitCount: true                   # 是否显示访问计数
-  ShowLastMod: true                  # 是否显示最后修改时间
-  ShowToc: true                      # 是否显示目录
-  TocOpen: false                      # 目录自动展开
-  comments: true                     # 启用评论功能
+  env: production                   # 环境设置为生产环境
+  author: yfc01                    # 博主姓名
+  defaultTheme: auto                # 默认主题设置为自动
+  disableThemeToggle: false         # 启用主题切换
+  DateFormat: "2006-01-02"         # 日期格式
+  ShowShareButtons: true            # 是否显示分享按钮
+  ShowReadingTime: true             # 是否显示阅读时间
+  displayFullLangName: true         # 是否显示完整语言名称
+  ShowPostNavLinks: true            # 是否显示文章导航链接
+  ShowBreadCrumbs: false            # 是否显示面包屑导航
+  ShowCodeCopyButtons: true         # 是否显示代码复制按钮
+  hideFooter: false                 # 不隐藏页脚
+  ShowWordCounts: true              # 是否显示字数
+  VisitCount: true                  # 是否显示访问计数
+  ShowLastMod: true                 # 是否显示最后修改时间
+  ShowToc: true                     # 是否显示目录
+  TocOpen: false                    # 目录自动展开
+  comments: true                    # 启用评论功能
   showbreadcrumbs: false             # 关闭显示当前路径 
 
   # 评论的设置
   giscus:
-    repo: "sonnycalcr/sonnycalcr.github.io"
-    repoId: "xxxxxx"
-    category: "Announcements"
-    categoryId: "xxxxx"
-    mapping: "pathname"
-    strict: "0"
-    reactionsEnabled: "1"
-    emitMetadata: "0"
-    inputPosition: "bottom"
-    lightTheme: "light"
-    darkTheme: "dark"
-    lang: "zh-CN"
-    crossorigin: "anonymous"
+    repo: "sonnycalcr/sonnycalcr.github.io"  # Giscus 仓库
+    repoId: "xxxxxx"                          # 仓库 ID
+    category: "Announcements"                 # 分类
+    categoryId: "xxxxx"                       # 分类 ID
+    mapping: "pathname"                       # 映射方式
+    strict: "0"                               # 是否严格模式
+    reactionsEnabled: "1"                     # 启用反应功能
+    emitMetadata: "0"                         # 启用元数据
+    inputPosition: "bottom"                   # 输入框位置
+    lightTheme: "light"                       # 亮色主题
+    darkTheme: "dark"                         # 暗色主题
+    lang: "zh-CN"                             # 语言
+    crossorigin: "anonymous"                   # 跨域请求
 
   # 社交媒体图标
   socialIcons:
-    - name: github                    # GitHub 图标
-      url: "https://github.com/yfc01" # GitHub 链接
-    - name: QQ                         # QQ 图标
-      url: "img/qq.jpg"               # QQ 图像链接
-    - name: WeChat                     # 微信图标
-      url: "img/wechat.jpg"           # 微信图像链接
-    - name: email                      # 邮件图标
-      url: "mailto:2063454530@qq.com"  # 邮件链接
+    - name: github                            # GitHub 图标
+      url: "https://github.com/yfc01"       # GitHub 链接
+    - name: QQ                               # QQ 图标
+      url: "img/qq.jpg"                      # QQ 图像链接
+    - name: WeChat                           # 微信图标
+      url: "img/wechat.jpg"                  # 微信图像链接
+    - name: email                            # 邮件图标
+      url: "mailto:2063454530@qq.com"        # 邮件链接
 
   # 图标配置
   assets:
-    favicon: "img/active.jpg"         # 网站图标
-    favicon16x16: "img/active.jpg"    # 16x16 图标
-    favicon32x32: "img/active.jpg"    # 32x32 图标
-    apple_touch_icon: "img/active.jpg" # Apple 触摸图标
-    safari_pinned_tab: "img/active.jpg" # Safari 固定标签图标
-    disableFingerprinting: true         # 禁用指纹追踪
+    favicon: "img/active.jpg"                 # 网站图标
+    favicon16x16: "img/active.jpg"            # 16x16 图标
+    favicon32x32: "img/active.jpg"            # 32x32 图标
+    apple_touch_icon: "img/active.jpg"       # Apple 触摸图标
+    safari_pinned_tab: "img/active.jpg"      # Safari 固定标签图标
+    disableFingerprinting: true                # 禁用指纹追踪
+    assets:
+      disableHLJS: true                        # 禁用 HighLight.js
 
 # Markdown 渲染设置
 markup:
   goldmark:
     renderer:
-      unsafe: true                    # 启用不安全 HTML 渲染
+      unsafe: true                             # 启用不安全 HTML 渲染
   highlight:
-    codeFences: true                  # 启用代码围栏
-    guessSyntax: true                 # 自动猜测代码语法
-    lineNos: true                     # 显示行号
-    style: darcula                    # 代码高亮风格
+    guessSyntax: false                         # 自动猜测代码语法
+    anchorLineNos: false                       # 不给行号设置锚标
+    codeFences: true                           # 启用代码围栏
+    noClasses: false                           # 不使用类
+    lineNos: false                             # 不显示代码行号
+    lineNumbersInTable: false                  # 不在摘要中显示行号
 
 # 隐私设置
 privacy:
   vimeo:
-    disabled: false                   # Vimeo 设置
-    simple: true                      # 简单模式
+    disabled: false                           # Vimeo 设置
+    simple: true                              # 简单模式
   twitter:
-    disabled: false                   # Twitter 设置
-    enableDNT: true                   # 启用“Do Not Track”功能
-    simple: true                      # 简单模式
+    disabled: false                           # Twitter 设置
+    enableDNT: true                           # 启用“Do Not Track”功能
+    simple: true                              # 简单模式
   instagram:
-    disabled: false                   # Instagram 设置
-    simple: true                      # 简单模式
+    disabled: false                           # Instagram 设置
+    simple: true                              # 简单模式
   youtube:
-    disabled: false                   # YouTube 设置
-    privacyEnhanced: true             # 启用隐私增强模式
+    disabled: false                           # YouTube 设置
+    privacyEnhanced: true                     # 启用隐私增强模式
 
 # 服务设置
 services:
   instagram:
-    disableInlineCSS: true            # 禁用 Instagram 内联 CSS
+    disableInlineCSS: true                    # 禁用 Instagram 内联 CSS
   twitter:
-    disableInlineCSS: true            # 禁用 Twitter 内联 CSS
+    disableInlineCSS: true                    # 禁用 Twitter 内联 CSS

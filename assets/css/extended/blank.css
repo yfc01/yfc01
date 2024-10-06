@@ -4,6 +4,7 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
 
+/* 关于我样式 */
 .friendurl {
     text-decoration: none !important;
     color: black;
@@ -104,8 +105,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
         font-size: 18px;
     }
 }
+/* 关于我样式end */
 
-/*标签*/
+/* 分类和标签样式 */
 .terms-tags {
     text-align: center;
 }
@@ -143,3 +145,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .terms-tags li {
     margin: 5px;
 }
+/* 分类和标签样式end */
+
+/* 代码字体样式 */
+.post-content pre,
+code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+/* 代码字体样式end */
