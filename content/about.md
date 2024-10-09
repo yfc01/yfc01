@@ -20,6 +20,6 @@ cover:
     relative: false
 ---
 
-<img src="https://w.wallhaven.cc/full/3l/wallhaven-3l8lgv.png" alt="Edge Image Viewer (wallhaven.cc)" class="zoom-img" style="width:80%;">
+<img src="https://w.wallhaven.cc/full/3l/wallhaven-3l8lgv.png" alt="Edge Image Viewer (wallhaven.cc)" style="width:90%;">
 
 一个普通的互联网用户。
