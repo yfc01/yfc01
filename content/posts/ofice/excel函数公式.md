@@ -156,8 +156,6 @@ excel中的函数运算功能是数据处理的重要工具，熟练运用该工
     <td>=IF(A1&gt;10, "大于", "小于")</td>
   </tr>
 </table>
-
-
 在 Excel 中，运算符的优先级决定了表达式中各个运算符执行的顺序。默认情况下，运算从高优先级到低优先级依次进行。如果运算符具有相同的优先级，则按照从左到右的顺序计算。
 
 以下是运算符的优先级顺序，从高到低：
@@ -173,8 +171,6 @@ excel中的函数运算功能是数据处理的重要工具，熟练运用该工
 9. **比较运算符** `=`、`<>`、`>`、`<`、`>=`、`<=`：用于比较数值或文本。
 
 如果表达式中有多个运算符，可以使用括号明确控制优先级。例如，在 `=(2 + 3) * 4` 中，括号内的加法先执行，结果为 `5`，然后再进行乘法，最终结果为 `20`。
-
-
 
 ## 相对引用和绝对引用
 
@@ -217,34 +213,46 @@ excel中的函数运算功能是数据处理的重要工具，熟练运用该工
 
 在使用 Excel 公式时，根据需求选择相对引用或绝对引用，能更灵活地管理公式行为。
 
-
-
 ## 函数
 
 ### 逻辑函数
 
-- [IF 函数](https://support.microsoft.com/zh-cn/office/if-函数-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2)：`IF` 函数是 Excel 中的一种逻辑函数，允许用户根据特定条件返回不同的结果。其基本语法为 `IF(条件, 值_if_true, 值_if_false)`，其中“条件”是需要判断的逻辑表达式，“值_if_true”是在条件为真时返回的值，“值_if_false”是在条件为假时返回的值。通过使用 `IF` 函数，用户可以轻松处理不同情况，并根据条件动态生成结果。
-- [IFERROR 函数](https://support.microsoft.com/zh-cn/office/iferror-函数-c526fd07-caeb-47b8-8bb6-63f3e417f611)：`IFERROR` 函数是 Excel 中用于处理错误的函数，它能够检测公式或表达式是否产生错误，并根据情况返回用户指定的值。其基本语法为 `IFERROR(值, 错误值)`，其中“值”是要检查的表达式或公式，“错误值”是在检测到错误时要返回的替代结果。通过使用 `IFERROR` 函数，用户可以避免在工作表中显示错误信息（如 `#DIV/0!` 或 `#N/A`），而是提供更友好的提示或替代值，从而提高数据的可读性和可靠性。
-- [AND 函数](https://support.microsoft.com/zh-cn/office/and-函数-5f19b2e8-e1df-4408-897a-ce285a19e9d9)：`AND` 函数是 Excel 中的逻辑函数，用于检查多个条件是否都为真。它接受多个条件作为参数，如果所有条件都为真，则返回 `TRUE`，否则返回 `FALSE`。该函数常用于复杂的条件判断中，特别是当你希望确保多个条件同时满足时。它可以与 `IF` 函数等其他函数结合使用，以实现更复杂的逻辑判断。
-- [OR 函数](https://support.microsoft.com/zh-cn/office/or-函数-7d17ad14-8700-4281-b308-00b131e22af0)：`OR` 函数是 Excel 中的逻辑函数，用于检查多个条件中是否至少有一个为真。它接受多个条件作为参数，只要有一个条件为真，函数就返回 `TRUE`，如果所有条件都为假，才会返回 `FALSE`。`OR` 函数常用于需要判断多个可能性是否成立的情况，特别是在需要满足任意一个条件时。它也可以与 `IF` 等函数结合使用，构建更复杂的逻辑判断。
-- [NOT 函数](https://support.microsoft.com/zh-cn/office/not-函数-9cfc6011-a054-40c7-a140-cd4ba2d87d77)：`NOT` 函数是 Excel 中的逻辑函数，用于反转条件的逻辑值。它接受一个条件作为参数，如果该条件为 `TRUE`，`NOT` 函数会返回 `FALSE`；如果条件为 `FALSE`，它会返回 `TRUE`。`NOT` 常用于需要颠倒某个逻辑判断的场景，或者与其他逻辑函数如 `AND` 和 `OR` 结合使用，创建更复杂的判断逻辑。例如，可以用 `NOT` 来检查某个条件不成立的情况。
+| **函数**                                                     | **说明**                                                     |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [IF 函数](https://support.microsoft.com/zh-cn/office/if-函数-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2) | 指定要执行的逻辑检测                                         |
+| [IFERROR 函数](https://support.microsoft.com/zh-cn/office/iferror-函数-c526fd07-caeb-47b8-8bb6-63f3e417f611) | 如果公式的计算结果错误，则返回您指定的值；否则返回公式的结果 |
+| [AND 函数](https://support.microsoft.com/zh-cn/office/and-函数-5f19b2e8-e1df-4408-897a-ce285a19e9d9) | 如果其所有参数均为 TRUE，则返回 TRUE                         |
+| [OR 函数](https://support.microsoft.com/zh-cn/office/or-函数-7d17ad14-8700-4281-b308-00b131e22af0) | 如果任一参数为 TRUE，则返回 TRUE                             |
+| [NOT 函数](https://support.microsoft.com/zh-cn/office/not-函数-9cfc6011-a054-40c7-a140-cd4ba2d87d77) | 对其参数的逻辑求反                                           |
 
 ### 文本函数
 
-- [LEFT、LEFTB 函数](https://support.microsoft.com/zh-cn/office/left-leftb-函数-9203d2d2-7960-479b-84c6-1ea52b99640c)：`LEFT` 函数是 Excel 中的文本函数，用于从文本字符串的左侧提取指定数量的字符。它接受两个参数，第一个参数是要提取字符的文本，第二个参数是需要提取的字符数。`LEFT` 常用于从文本中提取固定长度的前缀，比如提取电话号码的区号或产品编号的前几位。如果第二个参数省略，默认提取第一个字符。通过使用 `LEFT`，你可以灵活地处理和分割文本数据。
-- [RIGHT、RIGHTB 函数](https://support.microsoft.com/zh-cn/office/right-rightb-函数-240267ee-9afa-4639-a02b-f19e1786cf2f)：`RIGHT` 和 `RIGHTB` 函数用于从文本字符串的右侧提取指定数量的字符。`RIGHT` 函数根据字符数来提取，例如，如果从单词 "Excel" 提取 2 个字符，结果是 "el"。而 `RIGHTB` 函数根据字节数提取字符，主要用于双字节字符集 (DBCS) 语言，如中文、日文等，因此每个汉字占两个字节，而英文字符只占一个字节。这个区别在处理双字节字符集时尤为重要。
-- [MID、MIDB 函数](https://support.microsoft.com/zh-cn/office/mid-midb-函数-d5f9e25c-d7d6-472e-b568-4ecb12433028)：`MID` 函数用于从文本字符串的指定位置开始，提取一定数量的字符。你可以通过提供起始位置和要提取的字符数量来获取子字符串。例如，对于文本 "Excel Functions"，使用 `MID` 提取从第 7 个字符开始的 9 个字符，结果将是 "Functions"。它非常适合在较长的文本中提取特定部分，常用于数据清理和文本操作。
-- [LEN、LENB 函数](https://support.microsoft.com/zh-cn/office/len-lenb-函数-29236f94-cedc-429d-affd-b5e33d2c67cb)：`LEN` 函数用于计算文本字符串中的字符总数，包括字母、数字、符号和空格。它能够快速返回字符串的长度，对于检查输入数据的字符数量或清理数据非常有用。例如，`LEN("Excel 123")` 的结果是 9，因为空格和数字也被计算在内。这个函数在处理文本数据时非常常用。
-- [LOWER 函数](https://support.microsoft.com/zh-cn/office/lower-函数-3f21df02-a80c-44b2-afaf-81358f9fdeb4)：`LOWER` 函数是 Excel 中用于将文本字符串中的所有字母转换为小写字母的函数。其语法为 `LOWER(text)`，其中 `text` 是你想要转换为小写的文本。无论输入的字母是大写还是混合大小写，`LOWER` 函数都会将其全部转换为小写。这个函数常用于文本规范化，尤其是在需要对大小写不敏感的数据进行比较或处理时。例如：`=LOWER("Hello World")` 的结果是 `hello world`。
-- [UPPER 函数](https://support.microsoft.com/zh-cn/office/upper-函数-c11f29b3-d1a3-4537-8df6-04d0049963d6)：`UPPER` 函数是 Excel 中用于将文本字符串中的所有字母转换为大写字母的函数，语法为 `UPPER(text)`，其中 `text` 是要转换为大写的文本。无论输入的字母是小写还是混合大小写，`UPPER` 函数都会将其全部转换为大写，常用于文本格式化和标准化数据。例如，`=UPPER("Hello World")` 的结果为 `HELLO WORLD`。
-- [SUBSTITUTE 函数](https://support.microsoft.com/zh-cn/office/substitute-函数-6434944e-a904-4336-a9b0-1e58df3bc332)：`SUBSTITUTE` 函数是 Excel 中用于替换文本字符串中指定字符或子字符串的函数，语法为 `SUBSTITUTE(text, old_text, new_text, [instance_num])`。其中，`text` 是要进行替换的原始文本，`old_text` 是要被替换的字符或子字符串，`new_text` 是用于替换的新字符或子字符串，而可选参数 `instance_num` 指定要替换的实例编号（如果省略则替换所有实例）。此函数常用于文本处理和数据清理，例如将字符串中的特定词汇替换为其他内容。示例：`=SUBSTITUTE("I love apples", "apples", "oranges")` 的结果为 `I love oranges`。
-- [REPLACE、REPLACEB 函数](https://support.microsoft.com/zh-cn/office/replace-replaceb-函数-8d799074-2425-4a8a-84bc-82472868878a)：`REPLACE` 和 `REPLACEB` 函数是 Excel 中用于替换文本字符串中特定位置的字符的函数。`REPLACE` 的语法为 `REPLACE(old_text, start_num, num_chars, new_text)`，其中 `old_text` 是要进行替换的原始文本，`start_num` 是开始替换的位置，`num_chars` 是要替换的字符数，`new_text` 是用于替换的新字符。`REPLACEB` 函数则是专为使用双字节字符集（如中文或日文）设计的，其语法相似，`REPLACEB(old_text, start_num, num_bytes, new_text)`，这里的 `num_bytes` 指定要替换的字节数。两个函数常用于文本处理，尤其在需要替换特定位置字符时。示例：`=REPLACE("Hello World", 7, 5, "Excel")` 的结果为 `Hello Excel`。
-- [FIND、FINDB 函数](https://support.microsoft.com/zh-cn/office/find-findb-函数-c7912941-af2a-4bdf-a553-d0d89b0a0628)：`FIND` 和 `FINDB` 函数是 Excel 中用于查找文本字符串中特定字符或子字符串的位置的函数。`FIND` 的语法为 `FIND(find_text, within_text, [start_num])`，其中 `find_text` 是要查找的字符或子字符串，`within_text` 是要搜索的原始文本，`start_num` 是可选参数，表示从哪个位置开始查找，默认从第一个字符开始。`FINDB` 函数则是专为使用双字节字符集（如中文或日文）设计，其语法为 `FINDB(find_text, within_text, [start_num])`，其中 `find_text` 和 `within_text` 的含义相同，但在计数上以字节为单位。两个函数常用于文本处理，特别是在需要定位特定字符或子字符串的位置时。示例：`=FIND("W", "Hello World")` 的结果为 `7`，表示字母 `W` 在字符串中的位置。
-- [SEARCH、SEARCHB 函数](https://support.microsoft.com/zh-cn/office/search-searchb-函数-9ab04538-0e55-4719-a72e-b6f54513b495)：`SEARCH` 和 `SEARCHB` 函数是 Excel 中用于查找文本字符串中特定字符或子字符串的位置的函数。`SEARCH` 的语法为 `SEARCH(find_text, within_text, [start_num])`，其中 `find_text` 是要查找的字符或子字符串，`within_text` 是要搜索的原始文本，`start_num` 是可选参数，表示从哪个位置开始查找，默认从第一个字符开始。与 `FIND` 函数不同，`SEARCH` 函数不区分大小写，并且支持使用通配符。`SEARCHB` 函数则是专为使用双字节字符集（如中文或日文）设计，其语法类似，`SEARCHB(find_text, within_text, [start_num])`，同样以字节为单位进行计数。两个函数常用于文本处理，特别是在需要查找字符或子字符串位置时，示例：`=SEARCH("W", "Hello World")` 的结果为 `7`，表示字母 `W` 在字符串中的位置。
-- [TRIM 函数](https://support.microsoft.com/zh-cn/office/trim-函数-410388fa-c5df-49c6-b16c-9e5630b479f9)：`TRIM` 函数是 Excel 中用于去除文本字符串开头和结尾处多余空格的函数，同时也会将多个空格压缩为一个空格。其语法为 `TRIM(text)`，其中 `text` 是要处理的文本字符串。该函数常用于数据清理，尤其是在从外部源导入数据时，可以有效去除不必要的空格，从而提高数据的整洁性和准确性。需要注意的是，`TRIM` 函数只会删除 ASCII 空格字符（32），而不会去除其他非打印字符。示例：`=TRIM("   Hello   World   ")` 的结果为 `"Hello World"`。
-- [TEXT 函数](https://support.microsoft.com/zh-cn/office/text-函数-20d5ac4d-7b94-49fd-bb38-93d29371225c)：`TEXT` 函数是 Excel 中用于将数字转换为文本格式的函数，同时可以指定数字的显示格式。其语法为 `TEXT(value, format_text)`，其中 `value` 是要转换的数字，`format_text` 是指定的格式代码。此函数非常实用，可以用于将日期、货币和其他数字格式化为易于阅读的文本形式，例如，将数字转换为特定的货币格式或日期格式。示例：`=TEXT(1234.56, "$#,##0.00")` 的结果为 `"$1,234.56"`，将数字格式化为带有美元符号和千位分隔符的文本。
-- [VALUE 函数](https://support.microsoft.com/zh-cn/office/value-函数-257d0108-07dc-437d-ae1c-bc2d3953d8c2)：`VALUE` 函数是 Excel 中用于将文本字符串转换为数字的函数。其语法为 `VALUE(text)`，其中 `text` 是要转换的文本字符串。此函数特别适用于将以文本格式存储的数字转换为可以进行数学计算的实际数字，确保在执行数学运算时不会出现错误。例如，如果单元格中存储的值为 `"123.45"`（文本格式），使用 `VALUE` 函数可以将其转换为数字 `123.45`。示例：`=VALUE("123.45")` 的结果为 `123.45`，使得该值可以用于进一步的计算。
+| **函数**                                                     | **说明**                                       |
+| :----------------------------------------------------------- | :--------------------------------------------- |
+| [LEFT、LEFTB 函数](https://support.microsoft.com/zh-cn/office/left-leftb-函数-9203d2d2-7960-479b-84c6-1ea52b99640c) | 返回文本值中最左边的字符                       |
+| [RIGHT、RIGHTB 函数](https://support.microsoft.com/zh-cn/office/right-rightb-函数-240267ee-9afa-4639-a02b-f19e1786cf2f) | 返回文本值中最右边的字符                       |
+| [MID、MIDB 函数](https://support.microsoft.com/zh-cn/office/mid-midb-函数-d5f9e25c-d7d6-472e-b568-4ecb12433028) | 从文本字符串中的指定位置起返回特定个数的字符   |
+| [LEN、LENB 函数](https://support.microsoft.com/zh-cn/office/len-lenb-函数-29236f94-cedc-429d-affd-b5e33d2c67cb) | 返回文本字符串中的字符个数                     |
+| [LOWER 函数](https://support.microsoft.com/zh-cn/office/lower-函数-3f21df02-a80c-44b2-afaf-81358f9fdeb4) | 将文本转换为小写                               |
+| [UPPER 函数](https://support.microsoft.com/zh-cn/office/upper-函数-c11f29b3-d1a3-4537-8df6-04d0049963d6) | 将文本转换为大写形式                           |
+| [SUBSTITUTE 函数](https://support.microsoft.com/zh-cn/office/substitute-函数-6434944e-a904-4336-a9b0-1e58df3bc332) | 在文本字符串中用新文本替换旧文本               |
+| [REPLACE、REPLACEB 函数](https://support.microsoft.com/zh-cn/office/replace-replaceb-函数-8d799074-2425-4a8a-84bc-82472868878a) | 替换文本中的字符                               |
+| [FIND、FINDB 函数](https://support.microsoft.com/zh-cn/office/find-findb-函数-c7912941-af2a-4bdf-a553-d0d89b0a0628) | 在一个文本值中查找另一个文本值（区分大小写）   |
+| [SEARCH、SEARCHB 函数](https://support.microsoft.com/zh-cn/office/search-searchb-函数-9ab04538-0e55-4719-a72e-b6f54513b495) | 在一个文本值中查找另一个文本值（不区分大小写） |
+| [TRIM 函数](https://support.microsoft.com/zh-cn/office/trim-函数-410388fa-c5df-49c6-b16c-9e5630b479f9) | 删除文本中的空格                               |
+| [TEXT 函数](https://support.microsoft.com/zh-cn/office/text-函数-20d5ac4d-7b94-49fd-bb38-93d29371225c) | 设置数字格式并将其转换为文本                   |
+| [VALUE 函数](https://support.microsoft.com/zh-cn/office/value-函数-257d0108-07dc-437d-ae1c-bc2d3953d8c2) | 将文本参数转换为数字                           |
 
 ### 查找和引用函数
 
-- [LOOKUP 函数](https://support.microsoft.com/zh-cn/office/lookup-函数-446d94af-663b-451d-8251-369d5e3864cb)：`LOOKUP` 函数是 Excel 中用于查找某个值并返回对应结果的函数，能够在一维或二维数组中进行查找。其基本语法为 `LOOKUP(lookup_value, lookup_vector, [result_vector])`，其中 `lookup_value` 是要查找的值，`lookup_vector` 是包含要查找值的范围，而可选的 `result_vector` 是要返回结果的对应范围。如果未提供 `result_vector`，则返回 `lookup_vector` 中与 `lookup_value` 相同位置的值。`LOOKUP` 函数可用于查找和提取信息，尤其适合处理排好序的数据。需要注意的是，该函数在查找时不支持模糊匹配，只会返回匹配项或最后一个小于该值的项。例如，`=LOOKUP(5, A1:A5, B1:B5)` 会查找范围 A1:A5 中的值 5，并返回 B1:B5 中对应的值。
+| **函数**                                                     | **说明**                                             |
+| :----------------------------------------------------------- | :--------------------------------------------------- |
+| [LOOKUP 函数](https://support.microsoft.com/zh-cn/office/lookup-函数-446d94af-663b-451d-8251-369d5e3864cb) | 在向量或数组中查找值                                 |
+| [VLOOKUP 函数](https://support.microsoft.com/zh-cn/office/vlookup-函数-0bbc8083-26fe-4963-8ab8-93a18ad188a1) | 在数组第一列中查找，然后在行之间移动以返回单元格的值 |
+| [HLOOKUP 函数](https://support.microsoft.com/zh-cn/office/hlookup-函数-a3034eec-b719-4ba3-bb65-e1ad662ed95f) | 查找数组的首行，并返回指定单元格的值                 |
+| [COLUMN 函数](https://support.microsoft.com/zh-cn/office/column-函数-44e8c754-711c-4df3-9da4-47a55042554b) | 返回引用的列号                                       |
+| [ROWS 函数](https://support.microsoft.com/zh-cn/office/rows-函数-b592593e-3fc2-47f2-bec1-bda493811597) | 返回引用中的行数                                     |
+| [ADDRESS 函数](https://support.microsoft.com/zh-cn/office/address-函数-d0c26c0d-3991-446b-8de4-ab46431d4f89) | 以文本形式将引用值返回到工作表的单个单元格           |
+| [INDIRECT 函数](https://support.microsoft.com/zh-cn/office/indirect-函数-474b3a3a-8a26-4f44-b491-92b6306fa261) | 返回由文本值指定的引用                               |
+| [INDEX 函数](https://support.microsoft.com/zh-cn/office/index-函数-a5dcf0dd-996d-40a4-a822-b56b061328bd) | 使用索引从引用或数组中选择值                         |
+
