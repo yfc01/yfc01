@@ -1,7 +1,7 @@
 ---
 title: "Excel函数公式" #标题
 date: 2024-10-09T18:39:38+08:00 #创建时间
-lastmod: 2024-10-09T18:39:38+08:00 #更新时间
+lastmod: 2024-10-10T15:33:39+08:00 #更新时间
 author: ["yfc01"] #作者
 categories: 
 - ofice
@@ -255,4 +255,61 @@ excel中的函数运算功能是数据处理的重要工具，熟练运用该工
 | [ADDRESS 函数](https://support.microsoft.com/zh-cn/office/address-函数-d0c26c0d-3991-446b-8de4-ab46431d4f89) | 以文本形式将引用值返回到工作表的单个单元格           |
 | [INDIRECT 函数](https://support.microsoft.com/zh-cn/office/indirect-函数-474b3a3a-8a26-4f44-b491-92b6306fa261) | 返回由文本值指定的引用                               |
 | [INDEX 函数](https://support.microsoft.com/zh-cn/office/index-函数-a5dcf0dd-996d-40a4-a822-b56b061328bd) | 使用索引从引用或数组中选择值                         |
+| [MATCH 函数](https://support.microsoft.com/zh-cn/office/match-函数-e8dffd45-c762-47d6-bf89-533f4a37673a) | 在引用或数组中查找值                                 |
+| [OFFSET 函数](https://support.microsoft.com/zh-cn/office/offset-函数-c8de19ae-dd79-4b9b-a14e-b4d906d11b66) | 从给定引用中返回引用偏移量                           |
+| [TRANSPOSE 函数](https://support.microsoft.com/zh-cn/office/transpose-函数-ed039415-ed8a-4a81-93e9-4b6dfac76027) | 返回数组的转置                                       |
 
+### 数学和三角函数
+
+| **函数**                                                     | **说明**                         |
+| :----------------------------------------------------------- | :------------------------------- |
+| [SUM 函数](https://support.microsoft.com/zh-cn/office/sum-函数-043e1c7d-7726-4e80-8f32-07b23e057f89) | 求参数的和                       |
+| [SUMIF 函数](https://support.microsoft.com/zh-cn/office/sumif-函数-169b8c99-c05c-4483-a712-1697a653039b) | 按给定条件对指定单元格求和       |
+| [SUMIFS 函数](https://support.microsoft.com/zh-cn/office/sumifs-函数-c9e748f5-7ea7-455d-9406-611cebce642b) | 在区域中添加满足多个条件的单元格 |
+| [SUBTOTAL 函数](https://support.microsoft.com/zh-cn/office/subtotal-函数-7b027003-f060-4ade-9040-e478765b9939) | 返回列表或数据库中的分类汇总     |
+| [PRODUCT 函数](https://support.microsoft.com/zh-cn/office/product-函数-8e6b5b24-90ee-4650-aeec-80982a0512ce) | 将其参数相乘                     |
+| [SUMPRODUCT 函数](https://support.microsoft.com/zh-cn/office/sumproduct-函数-16753e75-9f68-4874-94ac-4d2145a2fd2e) | 返回对应的数组元素的乘积和       |
+| [ROUND 函数](https://support.microsoft.com/zh-cn/office/round-函数-c018c5d8-40fb-4053-90b1-b3e7f61a213c) | 将数字按指定位数舍入             |
+| [TRUNC 函数](https://support.microsoft.com/zh-cn/office/trunc-函数-8b86a64c-3127-43db-ba14-aa5ceb292721) | 将数字截尾取整                   |
+| [INT 函数](https://support.microsoft.com/zh-cn/office/int-函数-a6c4af9e-356d-4369-ab6a-cb1fd9d343ef) | 将数字向下舍入到最接近的整数     |
+| [ABS 函数](https://support.microsoft.com/zh-cn/office/abs-函数-3420200f-5628-4e8c-99da-c99d7c87713c) | 返回数字的绝对值                 |
+| [MOD 函数](https://support.microsoft.com/zh-cn/office/mod-函数-9b6cd169-b6ee-406a-a97b-edf2a9dc24f3) | 返回除法的余数                   |
+| [RAND 函数](https://support.microsoft.com/zh-cn/office/rand-函数-4cbfa695-8869-4788-8d90-021ea9f5be73) | 返回 0 和 1 之间的一个随机数     |
+
+### 统计函数
+
+| **函数**                                                     | **说明**                                                 |
+| :----------------------------------------------------------- | :------------------------------------------------------- |
+| [AVERAGE 函数](https://support.microsoft.com/zh-cn/office/average-函数-047bac88-d466-426c-a32b-8f33eb960cf6) | 返回其参数的平均值                                       |
+| [AVERAGEIF 函数](https://support.microsoft.com/zh-cn/office/averageif-函数-faec8e2e-0dec-4308-af69-f5576d8ac642) | 返回区域中满足给定条件的所有单元格的平均值（算术平均值） |
+| [AVERAGEIFS 函数](https://support.microsoft.com/zh-cn/office/averageifs-函数-48910c45-1fc0-4389-a028-f7c5c3001690) | 返回满足多个条件的所有单元格的平均值（算术平均值）       |
+| [COUNT 函数](https://support.microsoft.com/zh-cn/office/count-函数-a59cd7fc-b623-4d93-87a4-d23bf411294c) | 计算参数列表中数字的个数                                 |
+| [COUNTIF 函数](https://support.microsoft.com/zh-cn/office/countif-函数-e0de10c6-f885-4e71-abb4-1f464816df34) | 计算区域内符合给定条件的单元格的数量                     |
+| [COUNTIFS 函数](https://support.microsoft.com/zh-cn/office/countifs-函数-dda3dc6e-f74e-4aee-88bc-aa8c2a866842) | 计算区域内符合多个条件的单元格的数量                     |
+| [COUNTA 函数](https://support.microsoft.com/zh-cn/office/counta-函数-7dc98875-d5c1-46f1-9a82-53f3219e2509) | 计算参数列表中值的个数                                   |
+| [COUNTBLANK 函数](https://support.microsoft.com/zh-cn/office/countblank-函数-6a92d772-675c-4bee-b346-24af6bd3ac22) | 计算区域内空白单元格的数量                               |
+| [MAX 函数](https://support.microsoft.com/zh-cn/office/max-函数-e0012414-9ac8-4b34-9a47-73e662c08098) | 返回参数列表中的最大值                                   |
+| [MIN 函数](https://support.microsoft.com/zh-cn/office/min-函数-61635d12-920f-4ce2-a70f-96f202dcc152) | 返回参数列表中的最小值                                   |
+| [LARGE 函数](https://support.microsoft.com/zh-cn/office/large-函数-3af0af19-1190-42bb-bb8b-01672ec00a64) | 返回数据集中第 k 个最大值                                |
+| [SMALL 函数](https://support.microsoft.com/zh-cn/office/small-函数-17da8222-7c82-42b2-961b-14c45384df07) | 返回数据集中的第 k 个最小值                              |
+| [RANK.AVG 函数](https://support.microsoft.com/zh-cn/office/rank-avg-函数-bd406a6f-eb38-4d73-aa8e-6d1c3c72e83a) | 返回一列数字的数字排位                                   |
+
+### 日期函数
+
+| **函数**                                                     | **说明**                                       |
+| :----------------------------------------------------------- | :--------------------------------------------- |
+| [TODAY 函数](https://support.microsoft.com/zh-cn/office/today-函数-5eb3078d-a82c-4736-8930-2f51a028fdd9) | 返回今天日期的序列号                           |
+| [NOW 函数](https://support.microsoft.com/zh-cn/office/now-函数-3337fd29-145a-4347-b2e6-20c904739c46) | 返回当前日期和时间的序列号                     |
+| [YEAR 函数](https://support.microsoft.com/zh-cn/office/year-函数-c64f017a-1354-490d-981f-578e8ec8d3b9) | 将序列号转换为年                               |
+| [MONTH 函数](https://support.microsoft.com/zh-cn/office/month-函数-579a2881-199b-48b2-ab90-ddba0eba86e8) | 将序列号转换为月                               |
+| [DAY 函数](https://support.microsoft.com/zh-cn/office/day-函数-8a7d1cbb-6c7d-4ba1-8aea-25c134d03101) | 将序列号转换为月份日期                         |
+| [HOUR 函数](https://support.microsoft.com/zh-cn/office/hour-函数-a3afa879-86cb-4339-b1b5-2dd2d7310ac7) | 将序列号转换为小时                             |
+| [MINUTE 函数](https://support.microsoft.com/zh-cn/office/minute-函数-af728df0-05c4-4b07-9eed-a84801a60589) | 将序列号转换为分钟                             |
+| [SECOND 函数](https://support.microsoft.com/zh-cn/office/second-函数-740d1cfc-553c-4099-b668-80eaa24e8af1) | 将序列号转换为秒                               |
+| [WORKDAY 函数](https://support.microsoft.com/zh-cn/office/workday-函数-f764a5b7-05fc-4494-9486-60d494efbf33) | 返回指定的若干个工作日之前或之后的日期的序列号 |
+
+### 信息函数
+
+| **函数**                                                     | **说明**                             |
+| :----------------------------------------------------------- | :----------------------------------- |
+| [CELL 函数](https://support.microsoft.com/zh-cn/office/cell-函数-51bd39a5-f338-4dbe-a33f-955d67c2b2cf) | 返回有关单元格格式、位置或内容的信息 |
